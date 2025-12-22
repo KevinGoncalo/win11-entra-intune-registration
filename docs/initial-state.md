@@ -30,7 +30,7 @@
 
 
 
-!\[Device State - Pre Enrollment](https://raw.githubusercontent.com/KevinGoncalo/win11-entra-intune-enrollment/main/screenshots/dsregcmd-prejoin.png)
+<img src="https://raw.githubusercontent.com/KevinGoncalo/win11-entra-intune-enrollment/main/screenshots/dsregcmd-prejoin.png" alt="Device State - Pre Enrollment" width="800">
 
 
 
