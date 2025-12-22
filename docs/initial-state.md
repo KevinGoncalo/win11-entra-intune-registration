@@ -30,7 +30,7 @@
 
 
 
-!\[Device State - Pre Enrollment](../screenshots/dsregcmd-prejoin.png)
+!\[Device State - Pre Enrollment](/screenshots/dsregcmd-prejoin.png)
 
 
 
