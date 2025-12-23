@@ -19,8 +19,10 @@ This project demonstrates registering a freshly installed Windows 11 device with
 
 ## 2. User Creation (Entra ID)
 
-**Screenshot 2:** `screenshots/user_created.png`  
-*Entra ID user created via PowerShell using the script in `scripts/create_user.ps1`. Requires the Microsoft Graph PowerShell module (`Install-Module Microsoft.Graph`). Demonstrates ability to provision cloud users programmatically and prepare them for device registration.*
+**Screenshot 3:**  
+<img src="https://raw.githubusercontent.com/KevinGoncalo/win11-entra-intune-enrollment/main/screenshots/entra-user-created.png" alt="Entra ID user created">
+
+*Entra ID user created via PowerShell using the script in `scripts/create-user.ps1`. Demonstrates ability to provision cloud users programmatically and prepare them for device registration.*
 
 ---
 
