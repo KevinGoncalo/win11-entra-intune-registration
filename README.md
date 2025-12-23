@@ -22,7 +22,8 @@ This project demonstrates registering a freshly installed Windows 11 device with
 **Screenshot 3:**  
 <img src="https://raw.githubusercontent.com/KevinGoncalo/win11-entra-intune-enrollment/main/screenshots/entra-user-created.png" alt="Entra ID user created">
 
-*Entra ID user created via PowerShell using the script in `scripts/create-user.ps1`. Demonstrates ability to provision cloud users programmatically and prepare them for device registration.*
+*Entra ID user created via PowerShell using the script in [scripts/create-user.ps1](scripts/create-user.ps1)
+. Demonstrates ability to provision cloud users programmatically and prepare them for device registration.*
 
 ---
 
