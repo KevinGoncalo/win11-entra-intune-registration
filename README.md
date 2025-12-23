@@ -10,9 +10,6 @@ This project demonstrates registering a freshly installed Windows 11 device with
 **Screenshot 1:** 
 <img src="https://raw.githubusercontent.com/KevinGoncalo/win11-entra-intune-enrollment/main/screenshots/vm-system-info.png" alt="vm system info">
 
-**Screenshot 2:** 
-<img src="https://raw.githubusercontent.com/KevinGoncalo/win11-entra-intune-enrollment/main/screenshots/vm-access-work-school.png" alt="system">
-
 *Fresh Windows 11 VM created in Hyper-V, ready for post-install registration. See [Initial State](docs/initial-state.md) for VM setup and configuration details.*
 
 ---
