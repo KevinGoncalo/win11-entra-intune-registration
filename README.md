@@ -48,11 +48,20 @@ This project demonstrates registering a freshly installed Windows 11 device with
 
 ## 4. Policy & Compliance
 
-**Screenshot 5:** `screenshots/compliance_policy.png`  
-*Enforcement of baseline security policies via Intune (e.g., password requirements, BitLocker). Device is compliant with corporate standards.*
+**Screenshot 7:**
+<img src="https://raw.githubusercontent.com/KevinGoncalo/win11-entra-intune-enrollment/main/screenshots/compliance-policy.png" alt="compliance policy">
 
-**Screenshot 6 (optional):** `screenshots/noncompliant.png`  
-*Shows how non-compliant devices are restricted from corporate resources, demonstrating Conditional Access awareness.*
+*Enforcement of baseline security policies via Intune (e.g., password requirements for demonstration purposes).*
+
+**Screenshot 8:**
+<img src="https://raw.githubusercontent.com/KevinGoncalo/win11-entra-intune-enrollment/main/screenshots/entra-join-machine-compliant.png" alt="entra join machine compliant">
+
+*Device is compliant.*
+
+**Screenshot 9:**
+<img src="https://raw.githubusercontent.com/KevinGoncalo/win11-entra-intune-enrollment/main/screenshots/conditional-access.png" alt="conditional access">
+
+*Shows how non-compliant devices are restricted from corporate resources (All cloud apps in this case), demonstrating Conditional Access awareness.*
 
 ---
 
