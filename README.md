@@ -61,7 +61,7 @@ This project demonstrates registering a freshly installed Windows 11 device with
 **Screenshot 9:**
 <img src="https://raw.githubusercontent.com/KevinGoncalo/win11-entra-intune-enrollment/main/screenshots/conditional-access.png" alt="conditional access">
 
-*Shows how non-compliant devices are restricted from corporate resources (All cloud apps in this case), demonstrating Conditional Access awareness.*
+*Shows how non-compliant devices are restricted from corporate resources ("All resources" in this case), demonstrating Conditional Access awareness.*
 
 ---
 
