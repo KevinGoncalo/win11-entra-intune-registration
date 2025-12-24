@@ -30,17 +30,17 @@ This project demonstrates registering a freshly installed Windows 11 device with
 ## 3. Device Registration
 
 **Screenshot 4:**
-<img src="https://raw.githubusercontent.com/KevinGoncalo/win11-entra-intune-enrollment/main/screenshots/access-work-school-registered" alt="access work school registered">
+<img src="https://raw.githubusercontent.com/KevinGoncalo/win11-entra-intune-enrollment/main/screenshots/access-work-school-registered.png" alt="access work school registered">
 
 **Screenshot 5:**
-<img src="https://raw.githubusercontent.com/KevinGoncalo/win11-entra-intune-enrollment/main/screenshots/entra-device-registered" alt="entra device registered">
+<img src="https://raw.githubusercontent.com/KevinGoncalo/win11-entra-intune-enrollment/main/screenshots/entra-device-registered.png" alt="entra device registered">
 
 *VM successfully registered with Entra ID post-install. Demonstrates understanding of device identity management in a cloud environment.*
 
 *During Entra ID–registered device enrollment, Intune MDM discovery failed. Root cause analysis identified Windows Information Protection (WIP) user scope enforcement prior to device trust establishment, combined with incomplete IPv6 connectivity in the VM. Resolution required setting WIP scope to None and disabling IPv6 to restore successful MDM discovery and enrollment.*
 
 **Screenshot 6:**
-<img src="https://raw.githubusercontent.com/KevinGoncalo/win11-entra-intune-enrollment/main/screenshots/intune-device-registered" alt="intune device registered">
+<img src="https://raw.githubusercontent.com/KevinGoncalo/win11-entra-intune-enrollment/main/screenshots/intune-device-registered.png" alt="intune device registered">
 
 *Device connected to Intune. Baseline configuration policies and app deployments are now manageable, even though the device is registered rather than fully joined.*
 
