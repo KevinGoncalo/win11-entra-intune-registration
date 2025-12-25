@@ -1,11 +1,11 @@
-# Windows 11 Entra ID & Intune Registration – Portfolio Version
+# Windows 11 Post Install Device Registration with Microsoft Entra ID & Intune
 
 ## Overview
-This project demonstrates post-install Windows 11 device registration into Microsoft Entra ID and Intune without domain join or device wipe. It mirrors real-world cloud-first onboarding scenarios used in SMB and enterprise environments where devices arrive preinstalled and must be secured, standardized, and managed via MDM.
+This project demonstrates post install Windows 11 device registration into Microsoft Entra ID and Intune without domain join or device wipe. It mirrors real-world cloud-first onboarding scenarios where devices arrive with Windows 11 preinstalled and are initially configured with a local admin account.
 
-I chose registration as opposed to join because in my current role we receive new devices with Windows 11 pre-installed and a local admin account. I'm aware that at scale in an enterprise environment it would be more common to join devices as opposed to register. However, this scenario also simulates registering an employee device in a BYOD situation. 
+I chose device registration instead of full join because this reflects how devices are handled in my current role and in common BYOD scenarios. While full Entra ID join is more common at enterprise scale, registration is still used when devices need cloud identity and Intune management without reimaging.
 
-The purpose of this project is to offer proof of my understanding of cloud-first identity work flows. As well as demonstrating my ability to thoroughly and accurately document technical procedures. 
+The purpose of this project is to demonstrate my understanding of cloud first identity workflows and my ability to accurately document technical procedures.
 
 ---
 
@@ -41,7 +41,7 @@ The purpose of this project is to offer proof of my understanding of cloud-first
 
 *VM successfully registered with Entra ID post-install. Demonstrates understanding of device identity management in a cloud environment.*
 
-*During Entra ID registered device enrollment, Intune MDM discovery failed. Root cause was identified as Windows Information Protection (WIP) user scope enforcement prior to device trust establishment, combined with incomplete IPv6 connectivity in the VM. Resolution required setting WIP scope to "None" and disabling IPv6 to restore successful MDM discovery and enrollment.*
+*During testing, Intune MDM discovery initially failed. Root cause was identified as Windows Information Protection (WIP) user scope enforcement prior to device trust establishment, combined with incomplete IPv6 connectivity in the VM. Resolution required setting WIP scope to "None" and disabling IPv6 to restore successful MDM discovery and enrollment.*
 
 **Screenshot 6:**
 <img src="https://raw.githubusercontent.com/KevinGoncalo/win11-entra-intune-enrollment/main/screenshots/intune-device-registered.png" alt="intune device registered">
@@ -65,7 +65,7 @@ The purpose of this project is to offer proof of my understanding of cloud-first
 **Screenshot 9:**
 <img src="https://raw.githubusercontent.com/KevinGoncalo/win11-entra-intune-enrollment/main/screenshots/conditional-access.png" alt="conditional access">
 
-*Shows how non-compliant devices are restricted from corporate resources ("All resources" in this case), demonstrating Conditional Access awareness.*
+*Shows how non-compliant devices are restricted from corporate resources ("All resources" in this case), demonstrating Conditional Access enforcement.*
 
 ---
 
@@ -91,7 +91,8 @@ The purpose of this project is to offer proof of my understanding of cloud-first
 
 ## Notes
 
-- PowerShell was used to create the Entra ID user, demonstrating automation skills.  
-- Out of Scope: Windows Autopilot, Hybrid AD Join, SCCM/ConfigMgr.  
-- This project focuses on **post-install device registration**, which allows cloud integration and Intune management without a full device join.  
-- **Note:** Full enrollment (join) provides stronger management and compliance enforcement; registration is used here to demonstrate post-install cloud integration and device identity awareness.
+- PowerShell was used to create the Entra ID user, demonstrating programmatic cloud user provisioning.
+
+- Scope intentionally excludes Windows Autopilot, Hybrid Entra ID Join, and SCCM/ConfigMgr.
+
+- This project focuses specifically on post-install device registration to demonstrate cloud identity integration and Intune management without full device join or reimaging.
