@@ -1,7 +1,11 @@
 # Windows 11 Entra ID & Intune Registration – Portfolio Version
 
 ## Overview
-This project demonstrates registering a freshly installed Windows 11 device with Microsoft Entra ID and Intune, applying baseline configuration policies, deploying apps, and validating compliance. The focus is on **post-install registration**, showing how an unmanaged device can be connected to the cloud without performing a full wipe or join.
+This project demonstrates post-install Windows 11 device registration into Microsoft Entra ID and Intune without domain join or device wipe. It mirrors real-world cloud-first onboarding scenarios used in SMB and enterprise environments where devices arrive preinstalled and must be secured, standardized, and managed via MDM.
+
+I chose registration as opposed to join because in my current role we receive new devices with Windows 11 pre-installed and a local admin account. I'm aware that at scale in an enterprise environment it would be more common to join devices as opposed to register. However, this scenario also simulates registering an employee device in a BYOD situation. 
+
+The purpose of this project is to offer proof of my understanding of cloud-first identity work flows. As well as demonstrating my ability to thoroughly and accurately document technical procedures. 
 
 ---
 
@@ -13,7 +17,7 @@ This project demonstrates registering a freshly installed Windows 11 device with
 **Screenshot 2:** 
 <img src="https://raw.githubusercontent.com/KevinGoncalo/win11-entra-intune-enrollment/main/screenshots/vm-accounts-your-info.png" alt="vm accounts your info">
 
-*Fresh Windows 11 VM created in Hyper-V, ready for post-install registration. See [Initial State](docs/initial-state.md) for VM setup and configuration details.*
+*Fresh Windows 11 VM created in Hyper-V, ready for post-install registration.*
 
 ---
 
