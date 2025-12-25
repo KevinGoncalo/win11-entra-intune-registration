@@ -37,7 +37,7 @@ This project demonstrates registering a freshly installed Windows 11 device with
 
 *VM successfully registered with Entra ID post-install. Demonstrates understanding of device identity management in a cloud environment.*
 
-*During Entra ID–registered device enrollment, Intune MDM discovery failed. Root cause analysis identified Windows Information Protection (WIP) user scope enforcement prior to device trust establishment, combined with incomplete IPv6 connectivity in the VM. Resolution required setting WIP scope to None and disabling IPv6 to restore successful MDM discovery and enrollment.*
+*During Entra ID registered device enrollment, Intune MDM discovery failed. Root cause was identified as Windows Information Protection (WIP) user scope enforcement prior to device trust establishment, combined with incomplete IPv6 connectivity in the VM. Resolution required setting WIP scope to "None" and disabling IPv6 to restore successful MDM discovery and enrollment.*
 
 **Screenshot 6:**
 <img src="https://raw.githubusercontent.com/KevinGoncalo/win11-entra-intune-enrollment/main/screenshots/intune-device-registered.png" alt="intune device registered">
@@ -67,11 +67,21 @@ This project demonstrates registering a freshly installed Windows 11 device with
 
 ## 5. App Deployment & Configuration
 
-**Screenshot 7:** `screenshots/app_deployed.png`  
+**Screenshot 10:**
+<img src="https://raw.githubusercontent.com/KevinGoncalo/win11-entra-intune-enrollment/main/screenshots/apps-assigned.png" alt="apps assigned">
+
+**Screenshot 11:**
+<img src="https://raw.githubusercontent.com/KevinGoncalo/win11-entra-intune-enrollment/main/screenshots/installed-apps.png" alt="installed apps">
+
 *Application automatically installed via Intune upon registration, demonstrating managed software deployment.*
 
-**Screenshot 8 (optional):** `screenshots/config_profile.png`  
-*Configuration profiles applied (e.g., Wi-Fi or USB restrictions), highlighting standardized endpoint management.*
+**Screenshot 12:**
+<img src="https://raw.githubusercontent.com/KevinGoncalo/win11-entra-intune-enrollment/main/screenshots/usb-restricted-intune.png" alt="usb restricted intune">
+
+**Screenshot 13:**
+<img src="https://raw.githubusercontent.com/KevinGoncalo/win11-entra-intune-enrollment/main/screenshots/usb-restricted-device.png" alt="usb restricted device">
+
+*Configuration profiles applied (USB restrictions), highlighting standardized endpoint management.*
 
 ---
 
